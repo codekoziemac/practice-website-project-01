@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        nav{
+            width: 100vw;
+            position: fixed;
+            height: 60px;
+            background-color: #1b2525;
+            box-shadow:0 0 20px 10px rgba(0, 0, 0, 0.8) ;
+            
+            z-index: 1;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;     
+        }
+        nav ul li{
+            padding: 20px 20px 80px 80px;
+
+        }
+ 
+       nav ul li a{
+        font-family: Arial Black;
+        color: aliceblue;
+        border-radius: 10px;
+        font-weight: bold;
+       padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+       }
+       nav ul li a:hover{
+        zoom: 110%;
+        background-color: aliceblue;
+        box-shadow: 0 0 30px rgba(5, 255, 247, 0.8);
+        color: #000000;
+        transition: 0.8s ease;
+       }
+
+
+       .first{
+
+        background-image: url(https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60);
+        position: relative;
+         background-repeat: no-repeat;
+        
+         background-size:cover;
+        height: 100vh;
+        
+    }
+   .text{
+        font-family: Arial Black;   
+        font-size: 2rem;
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+    .text h2{
+        color:rgb(252, 255, 254);
+    }
+    .text h6{
+        font-family: segoe script;
+        color: rgb(37, 197, 1);
+    }
+    .text img{
+        
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(101, 198, 243, 0.8);
+    }
+    .text img:hover{
+        opacity: 0.9;
+        zoom: 105%;
+        transition: 0.7s;
+        
+    }
+    .text h2:hover{
+        color: rgb(0, 225, 255);
+        font-size: larger;
+        transition: .7s ease;
+        cursor: pointer;
+    }
+    
+    h1{
+        text-align: center;
+        padding-top: 100px;
+        font-family: Arial Black;
+        font-weight: normal;
+        font-size: 2rem;
+    }
+
+    #About{
+        height: 100vh;
+    }
+    .container{
+        padding-top: 40px;
+        color: white;
+        width: 50%;
+        position: absolute;
+        left: 25%;
+        background-color: #085e68;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        height: 35%;
+        border-radius: 30px;
+       box-shadow: 0 10px 20px rgba(11, 13, 14, 0.5);
+    }
+    .container:hover{
+       opacity: .9;
+    }
+    .container h2{
+        padding-bottom: 2rem;
+    }
+    .container p{
+        line-height: 2rem;
+        width: 500px;
+        text-align: justify;
+    }
+    .box{
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .small{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 300px;
+        margin-top: 0;
+        margin: 30px;
+        height: 190px;
+        padding: 20px;
+        background-color: #085e68;
+        border-radius: 30px;
+        
+
+    }
+    .small img,h3, p{
+        width: 200px;
+        height: 250px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 2rem;
+        color: white;
+    }   
+    .small img{
+        border-radius: 20px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    }
+    .small:hover{
+        transition: 0.5s ease-in-out;
+        width: 250px;
+        height: 350px;
+       align-items: center;
+       background-color:rgb(184, 47, 6) ;
+       
+      
+    }
+    .small img:hover{
+        zoom: 110%;
+    }
+    .contactcont{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        
+        height: 100vh;
+    }
+    .contactcont img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+   
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .contactcont a:hover{
+        
+        color: red;
+        font-size: 20px;
+        transition: 0.6s ease;
+       
+    }
+    .social:hover{
+        zoom: 110%;
+    }
+    
+
+   
+    </style>
+   
+</head>
+<body>
+    <nav>
+        <ul>
+         <li><a href="#Home">Home</a></li>
+         <li><a href="#About">About Me</a></li>
+         <li><a href="#blog">Blog</a></li>
+         <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>
+    <section id="Home">
+        <div class="first">
+            <div class="text">
+            <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.6435-9/159892205_2517408465235355_3145310038424021028_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJZZ0xyudtSuI6KxqM6_rkK6PP0I5IsSQro8_QjkixJNhswHJXDbibHfZNH1LAAWf4yk1hB_36MiVE7rVGGEwE&_nc_ohc=Y-JqPOjKVl8AX-iiP0G&_nc_ht=scontent.fmnl9-2.fna&oh=00_AfB2xP6T7z4JKrseDvWJVSHzif-5_7f6Yf65da0ckrN1TQ&oe=6389A233" alt="">
+            <h2>Mac Nino Ibale</h2>
+            <h6>Loves building websites</h6>
+        </div>
+        </div>
+    
+    </section>
+
+    <section id="About">
+       <h1>About Me</h1>
+        
+        <div class="container">
+            <h2>My name is Mac Nino Ibale</h2>
+
+            <p>I am a Bachelor of Science and Information Technology student in Cebu Technological University.
+                This is my first ever Html and Css project. My hobby is sketching. I love reading books.
+            </p>
+
+
+        </div>
+    </section>
+
+    
+    <section  id="blog">
+        <h1>Blog</h1>
+        <div class="box">
+            <div class="small">
+                <img src="https://media.istockphoto.com/photos/cascading-style-sheets-text-on-a-white-office-table-picture-id1415892332?b=1&k=20&m=1415892332&s=170667a&w=0&h=lvmIw8LFO3yooW4RxJTEqIXw6cdnLIPf29oytP-W2f8=" alt="">
+                <h3>CSS</h3>
+                <p>I am now learning CSS myself through the help of some websites like w3schools and tutorialpoint and Youtube also.</p>
+            </div>
+            <div  class="small">
+                <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGphdmFzY3JpcHR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                <h3>JAVASCRIPT</h3>
+                <p>Front-end web development is one of the step for me to reach my dream of becoming a full stack developer.</p>
+            </div>
+            <div class="small">
+                <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHRtbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+               <h3>HTML</h3>
+                <p>Front-end web development is one of the step for me to reach my dream of becoming a full stack developer.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contactcont">
+            <div class="social">
+                <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFjZWJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                <a href="https://web.facebook.com/profile.php?id=100008986773311">Message me on FaceBook</a>
+            </div>
+            <div class="social">
+                <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZhY2Vib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                <a href="https://www.instagram.com/accounts/login/">Message me on Instagram</a>
+            </div>
+        </div>
+    </section>
+   
+</body>
+</html>
